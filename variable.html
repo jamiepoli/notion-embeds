@@ -29,17 +29,19 @@
     </style>
 </head>
 <body>
+
+<div class="container>">
+    <div class="widget">
+        <div class="greet" id="greet"> </div>
+    </div>
+</div>
+
   <script>
     let url = new URL(window.location).search;
     let searchParams = new URLSearchParams(url);
     
     document.getElementById("greet").innerHTML = searchParams.get("name") + " ";
   </script>
-<div class="container>">
-    <div class="widget">
-        <div class="greet" id="greet"> </div>
-    </div>
-</div>
 
 </body>
 </html>
